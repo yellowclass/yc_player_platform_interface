@@ -205,6 +205,8 @@ class VideoEvent {
     this.duration,
     this.size,
     this.buffered,
+    this.errorType,
+    this.errorDetail,
   });
 
   /// The type of the event.
@@ -224,6 +226,9 @@ class VideoEvent {
   ///
   /// Only used if [eventType] is [VideoEventType.bufferingUpdate].
   final List<DurationRange>? buffered;
+
+  final String? errorType;
+  final String? errorDetail;
 
   @override
   bool operator ==(Object other) {
@@ -266,6 +271,9 @@ enum VideoEventType {
 
   /// An unknown event has been received.
   unknown,
+
+
+  error,
 }
 
 /// Describes a discrete segment of time within a video using a [start] and
@@ -318,10 +326,10 @@ class DurationRange {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is DurationRange &&
-          runtimeType == other.runtimeType &&
-          start == other.start &&
-          end == other.end;
+          other is DurationRange &&
+              runtimeType == other.runtimeType &&
+              start == other.start &&
+              end == other.end;
 
   @override
   int get hashCode => start.hashCode ^ end.hashCode;
