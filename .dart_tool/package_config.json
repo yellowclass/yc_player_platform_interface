@@ -140,13 +140,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "video_player_platform_interface",
+      "name": "yc_video_player_platform_interface",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-12-23T12:25:00.317670Z",
+  "generated": "2021-12-24T11:08:31.097346Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

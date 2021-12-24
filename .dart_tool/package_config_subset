@@ -1,7 +1,7 @@
-video_player_platform_interface
+yc_video_player_platform_interface
 2.12
-file:///Users/shivamkumar/Documents/Mobile-app/yc_player/yc_player_flutter/video_player_platform_interface/
-file:///Users/shivamkumar/Documents/Mobile-app/yc_player/yc_player_flutter/video_player_platform_interface/lib/
+file:///Users/shivamkumar/Documents/Mobile-app/yc_player/video_player_platform_interface/
+file:///Users/shivamkumar/Documents/Mobile-app/yc_player/video_player_platform_interface/lib/
 async
 2.12
 file:///Users/shivamkumar/Documents/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/
